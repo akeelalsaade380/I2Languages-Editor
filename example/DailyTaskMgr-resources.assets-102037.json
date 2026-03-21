@@ -1,0 +1,952 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 30920
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 591
+  },
+  "m_Name": "",
+  "dailyTaskInfoList": {
+    "Array": [
+      {
+        "type": 0,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 6305
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Kind Merchant</color> : The merchant in the castle charges a premium on your first purchase, but the price increases no more.",
+              "<color=#64C8F4FF>奸商从良</color> : 城堡中的商人初次购买价格提高,但重复购买不会加价.",
+              "<color=#64C8F4FF>奸商從良</color> : 城堡中的商人初次購買價格提高,但重複購買不會加價.",
+              "<color=#64C8F4FF>Mercader amable</color> : El mercader del castillo te cobra un recargo en tu primera adquisición, pero el precio no aumenta más.",
+              "<color=#64C8F4FF>Добрый купец</color>: купец в замке продает первый товар с наценкой, но после этого цена больше не увеличивается.",
+              "<color=#64C8F4FF>親切な商人</color> : 城の商人は初回購入時に割増料金を請求するが、それ以上価格は上がらない.",
+              "<color=#64C8F4FF>Mercante gentile</color> : Il mercante del castello aggiunge un premio al primo acquisto, ma il prezzo non aumenta più.",
+              "<color=#64C8F4FF>Marchand au grand cœur</color> : Le marchand du château fait payer le prix fort pour le premier achat, mais les prix n’augmentent pas.",
+              "<color=#64C8F4FF>Netter Händler</color> : Der Händler im Schloss berechnet beim ersten Einkauf einen Aufschlag, aber danach bleiben die Preise gleich."
+            ]
+          }
+        }
+      },
+      {
+        "type": 1,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 5148
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Double Attack</color> : Double the attack power of Treasure Hunters… and monsters! ",
+              "<color=#64C8F4FF>野蛮狂欢节</color> : 玩家造成的伤害翻倍,怪物造成的伤害也翻倍. ",
+              "<color=#64C8F4FF>野蠻狂歡節</color> : 玩家造成的傷害翻倍,怪物造成的傷害也翻倍.",
+              "<color=#64C8F4FF>Doble ataque</color> : Dobla el poder de ataque de los cazatesoros… ¡y monstruos!",
+              "<color=#64C8F4FF>Удвоенная атака</color>: сила атаки охотников за сокровищами удваивается... и монстров тоже! ",
+              "<color=#64C8F4FF>ダブルアタック</color> : 攻撃力を倍増させる.トレジャーハンターの攻撃力…そしてモンスターの攻撃力までも！",
+              "<color=#64C8F4FFAttacco doppio</color> : Raddoppia il potere d'attacco dei cacciatori di tesori... e dei mostri! ",
+              "<color=#64C8F4FF>Attaque doublée</color> : Double la puissance d’attaque des chasseurs de trésor… et des monstres !",
+              "<color=#64C8F4FF>Doppelangriff</color> : Verdoppelt die Angriffsstärke der Schatzjäger … und der Monster!"
+            ]
+          }
+        }
+      },
+      {
+        "type": 2,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 6845
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Price Fluctuation</color> : 50% chance off or increase of the item prices sold in store.",
+              "<color=#64C8F4FF>商店成本波动</color> : 商店的道具有50%概率价格减少50%,50%概率价格增加50%.",
+              "<color=#64C8F4FF>商店成本波動</color> : 商店的道具有50%概率價格減少50%,50%概率價格增加50%.",
+              "<color=#64C8F4FF>Fluctuación de precios</color> : Probabilidad de un 50% de aumento o reducción en los precios de los artículos de la tienda.",
+              "<color=#64C8F4FF>Изменчивая цена</color>: 50% шанс на скидку или повышение цены на предметы в магазине.",
+              "<color=#64C8F4FF>価格変動</color> : 店で販売されている商品の価格が50％オフまたは50%アップ.",
+              "<color=#64C8F4FF>Fluttuazione dei prezzi</color> : 50% di possibilità di sconto o di aumento dei prezzi degli articoli venduti in negozio.",
+              "<color=#64C8F4FF>Prix fluctuants</color> : 50 % de chances que le prix des objets de la boutique soit plus faible ou plus élevé que d’habitude.",
+              "<color=#64C8F4FF>Preisschwankung</color> : Die Gegenstände, die im Laden verkauft werden, kosten mit 50%iger Wahrscheinlichkeit entweder mehr oder weniger."
+            ]
+          }
+        }
+      },
+      {
+        "type": 3,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 5617
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Life Curse</color> : Your health total will decrease by 10% when leaving a room, and  increase by 100% after defeating a boss.",
+              "<color=#64C8F4FF>生命诅咒</color> : 玩家每通过一个有效房间,生命值上限会失去10%, 在击败该层boss后生命上限提升100%.",
+              "<color=#64C8F4FF>生命詛咒</color> : 玩家每通過一個有效房間,生命值上限會失去10%, 在擊敗該層boss後生命上限提升100%.",
+              "<color=#64C8F4FF>Maldición vital</color> : Tu vida total aumentará en un 10% cuando salgas de una sala, y aumentará en un 100% cuando derrotes a un jefe.",
+              "<color=#64C8F4FF>Жизненное проклятье</color>: ваше общее здоровье понижается на 10% при покидании комнаты и повышается на 100% после победы над боссом.",
+              "<color=#64C8F4FF>命の呪い</color> : 部屋を出るとHPの合計は10％減少し、ボスを倒すと100％になる.",
+              "<color=#64C8F4FF>Maledizione della vita</color> : Il totale della tua salute diminuirà del 10% quando lasci una stanza, e aumenterà del 100% dopo aver sconfitto un boss.",
+              "<color=#64C8F4FF>Malédiction vitale</color> : Votre vie totale baisse de 10 % quand vous quittez une salle, et grimpe de 100 % quand vous battez un boss.",
+              "<color=#64C8F4FF>Lebensfluch</color> : Deine Gesamtgesundheit sinkt um 10 %, wenn du einen Raum verlässt, und steigt um 100 %, wenn du einen Boss besiegst."
+            ]
+          }
+        }
+      },
+      {
+        "type": 4,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 6171
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Bloodthirsty Curse</color> : A curse decreases your life but doubles your attack power.",
+              "<color=#64C8F4FF>嗜血挑战</color> : 玩家受到了诅咒,生命值减半,但是攻击力翻倍.",
+              "<color=#64C8F4FF>嗜血挑戰</color> : 玩家受到了詛咒,生命值減半,但是攻擊力翻倍.",
+              "<color=#64C8F4FF>Maldición sanguinaria</color> : Una maldición que disminuye tu vida, pero dobla tu poder de ataque.",
+              "<color=#64C8F4FF>Проклятье кровожадности</color>: проклятье уменьшает ваш запас здоровья, но удваивает силу атаки.",
+              "<color=#64C8F4FF>血に飢えた呪い</color> : 命を減らすが、攻撃力を2倍にする呪い.",
+              "<color=#64C8F4FF>Maledizione della sete di sangue</color> : Una maledizione diminuisce la tua vita ma raddoppia il tuo potere d'attacco.",
+              "<color=#64C8F4FF>Malédiction sanguinaire</color> : Une malédiction réduit votre vie mais double votre puissance d’attaque.",
+              "<color=#64C8F4FF>Blutrünstiger Fluch</color> : Ein Fluch, der deine Gesundheit halbiert, aber deine Angriffsstärke verdoppelt."
+            ]
+          }
+        }
+      },
+      {
+        "type": 5,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 5710
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Darkness Falling</color> : Your range of sight is decreased.",
+              "<color=#64C8F4FF>黑夜降临</color> : 玩家默认的可视范围变小.",
+              "<color=#64C8F4FF>黑夜降臨</color> : 玩家默認的可視範圍變小.",
+              "<color=#64C8F4FF>Cegado por la oscuridad</color> : Tu rango de visión disminuye.",
+              "<color=#64C8F4FF>Наступление темноты</color>: ваша дальность обзора уменьшается.",
+              "<color=#64C8F4FF>闇への陥落</color> :視界が狭くなる.",
+              "<color=#64C8F4FF>Scende l'oscurità</color> : Il tuo campo visivo è diminuito.",
+              "<color=#64C8F4FF>Crépuscule</color> : La portée de votre vision est réduite.",
+              "<color=#64C8F4FF>Einbruch der Dunkelheit</color> : Deine Sichtweite wird gesenkt."
+            ]
+          }
+        }
+      },
+      {
+        "type": 6,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 6841
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Bless or Curse</color> : You gain a random buff or debuff when leaving a room.",
+              "<color=#64C8F4FF>祝福?诅咒?</color> : 玩家每通过一个有效房间后,随机获得一个短期的buff或debuff.",
+              "<color=#64C8F4FF>祝福?詛咒?</color> : 玩家每通過一個有效房間後,隨機獲得一個短期的buff或debuff.",
+              "<color=#64C8F4FF>Bendito o maldito</color> : Obtienes un subidón o bajón al azar al salir de una sala.",
+              "<color=#64C8F4FF>Пан или пропал</color>: при покидании комнаты вы получаете случайное усиление или ослабление.",
+              "<color=#64C8F4FF>神の祝福または呪い</color> :部屋を出る際にランダムにステータスが変化する.",
+              "<color=#64C8F4FF>Benedizione o maledizione</color> : Ottieni un potenziamento o depotenziamento casuale quando lasci una stanza.",
+              "<color=#64C8F4FF>Bénémalédiction</color> : Vous gagnez un bonus ou malus aléatoire quand vous quittez une salle.",
+              "<color=#64C8F4FF>Fluch oder Segen</color> : Du erhältst einen zufällig ausgewählten Buff oder Debuff, wenn du einen Raum verlässt."
+            ]
+          }
+        }
+      },
+      {
+        "type": 7,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 6434
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Become Wolf</color> : You have a 50% chance to become a werewolf when you complete a room.",
+              "<color=#64C8F4FF>月圆之夜</color> : 玩家每次通过有效场景后,都有50%概率变成狼人.",
+              "<color=#64C8F4FF>月圓之夜</color> : 玩家每次通過有效場景後,都有50%概率變成狼人.",
+              "<color=#64C8F4FF>Conversión en hombre lobo</color> : Tendrás un 50% de probabilidad de convertirte en hombre lobo cuando te hagas una sala.",
+              "<color=#64C8F4FF>Волчьи гены</color>: при покидании комнаты вы с 50% шансом превратитесь в волка.",
+              "<color=#64C8F4FF>狼男になる</color> : 部屋をコンプリートすると、50％の確率で狼男になる.",
+              "<color=#64C8F4FF>Diventa lupo</color> : Hai il 50% di possibilità di diventare un lupo mannaro quando completi una stanza.",
+              "<color=#64C8F4FF>Lycanthropie </color> : 50 % de chances de vous transformer en loup-garou quand vous avez terminé une salle.",
+              "<color=#64C8F4FF>Wolfswerdung</color> : Wenn du einen Raum verlässt, verwandelst du dich mit 50%iger Wahrscheinlichkeit in einen Werwolf."
+            ]
+          }
+        }
+      },
+      {
+        "type": 8,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 6330
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Knives Out</color> : You can only carry 99 throwing knives with double damage, and a random scabbard at the start. Treasure chests only provide knives as an active item.",
+              "<color=#64C8F4FF>飞刀狂欢节</color> : 飞刀携带数量上限为99,玩家的飞刀伤害翻倍,且初始随机携带一种飞刀刀鞘.宝箱主动道具只有飞刀.",
+              "<color=#64C8F4FF>飛刀狂歡節</color> : 飛刀攜帶數量上限為99,玩家的飛刀傷害翻倍,且初始隨機攜帶一種飛刀刀鞘.寶箱主動道具只有飛刀.",
+              "<color=#64C8F4FF>Cuchillos fuera</color> : Solo puedes llevar 99 cuchillos voladores con doble daño, y una vaina al azar al principio. Los cofres de tesoros sólo proporcionan cuchillos como artículo activo.",
+              "<color=#64C8F4FF>Ножи наголо</color>: вы можете переносить только 99 ножей с двойным уроном и случайные ножны на старте. В сундуках из активных предметов попадаются только ножи.",
+              "<color=#64C8F4FF>ナイフアウト</color> : スタート時に、ダブルダメージの投げナイフとその鞘を99本持つことができる.宝箱にあるのはアクティブアイテムのナイフのみ.",
+              "<color=#64C8F4FF>Fuori i coltelli</color> : Puoi portare solo 99 coltelli da lancio con doppio danno, e una fondina casuale all'inizio. I forzieri del tesoro offrono coltelli solo come oggetto attivo.",
+              "<color=#64C8F4FF>À couteaux tirés</color> : Vous ne pouvez transporter que 99 couteaux de jet à doubles dégâts, et un fourreau aléatoire au départ. Dans les coffres, les seuls objets actifs sont des couteaux.",
+              "<color=#64C8F4FF>Messer zücken</color> : Du kannst außer 99 Wurfmessern mit doppeltem Schaden und einer zufällig ausgewählten Schwertscheide am Anfang nichts tragen. Schatztruhen beinhalten an aktiven Gegenständen nur Messer."
+            ]
+          }
+        }
+      },
+      {
+        "type": 9,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 5376
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Family Heirloom</color> : Gain a rare weapon or other equipment at the start, but cannot be switched or took off during the entire game.",
+              "<color=#64C8F4FF>祖传装备</color> : 开局随机获取一件高价武器或装备,但是游戏过程中该装备无法被替换.",
+              "<color=#64C8F4FF>祖傳裝備</color> : 開局隨機獲取一件高價武器或裝備,但是遊戲過程中該裝備無法被替換.",
+              "<color=#64C8F4FF>Herencia familiar</color> : Obtienes un arma valiosa u otro artículo al principio, pero no la puedes cambiar en todo el juego.",
+              "<color=#64C8F4FF>Фамильная реликвия</color>: вы со старта получаете ценное оружие или другое снаряжение, но его нельзя сменить в течение всей игры.",
+              "<color=#64C8F4FF>家伝の奥義</color> : 最初に貴重な武器や他の装備を得るが、ゲームの最後まで切り替えることはできない.",
+              "<color=#64C8F4FF>Cimelio di famiglia</color> : Guadagni un'arma di valore o altro equipaggiamento all'inizio, ma non puoi cambiarlo per tutto il gioco.",
+              "<color=#64C8F4FF>Héritage familial</color> : Vous avez une arme puissante ou un autre type d’équipement dès le départ, mais ne pouvez pas les échanger pendant toute la partie.",
+              "<color=#64C8F4FF>Familienerbstück</color> : Zu Beginn erhältst du eine wertvolle Waffe oder einen wertvollen Ausrüstungsgegenstand, die bzw. der allerdings für den Rest des Spiels nicht gewechselt werden kann."
+            ]
+          }
+        }
+      },
+      {
+        "type": 10,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 5849
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Family Treasure</color> : Gain three passive items at the beginning of your run, but all monsters' health and attack power increases 20%.",
+              "<color=#64C8F4FF>祖传宝物</color> : 开局时随机获取三件被动道具,怪物的生命值和攻击力提升20%.",
+              "<color=#64C8F4FF>祖傳寶物</color> : 開局時隨機獲取三件被動道具,怪物的生命值和攻擊力提升20%.",
+              "<color=#64C8F4FF>Reliquia familiar</color> : Recibes tres objetos pasivos al empezar, pero la salud y el poder de ataque de los monstruos aumenta un 20%.",
+              "<color=#64C8F4FF>Унаследованное сокровище</color>: вы со старта получаете 3 пассивных предмета, но здоровье и атака всех монстров увеличивается на 20%.",
+              "<color=#64C8F4FF>家宝</color> : ランの最初に3つのパッシブアイテムを獲得するが、すべてのモンスターのHPと攻撃力が20％増す.",
+              "<color=#64C8F4FF>Tesoro di famiglia</color> : Guadagni tre oggetti passivi all'inizio della tua corsa, ma la salute di tutti i mostri e la potenza di attacco aumenta del 20%.",
+              "<color=#64C8F4FF>Trésor familial</color> : Vous avez 3 objets passifs dès le début de la partie, mais la vie et l’attaque de tous les monstres grimpent de 20 %.",
+              "<color=#64C8F4FF>Familienschatz</color> : Zu Beginn erhältst du drei passive Gegenstände, doch die Gesundheit und Angriffsstärke aller Monster wird um 20 % erhöht."
+            ]
+          }
+        }
+      },
+      {
+        "type": 11,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 6666
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Incurable Disease</color> : If your health bar is higher than 50%, it will slowly decrease to 50%.",
+              "<color=#64C8F4FF>身患绝症</color> : 当玩家生命值高于50%时,生命值会慢慢掉到50%.",
+              "<color=#64C8F4FF>身患絕症</color> : 當玩家生命值高於50%時,生命值會慢慢掉到50%.",
+              "<color=#64C8F4FF>Enfermedad incurable</color> : Si tu barra de vida es superior al 50%, se irá reduciendo lentamente hasta llegar al 50%.",
+              "<color=#64C8F4FF>Неизлечимая болезнь</color>: если ваш запас здоровья выше 50%, он будет постепенно уменьшаться до этой отметки.",
+              "<color=#64C8F4FF>不治の病</color> ：HPが50％を超えると、ゆっくりと50％まで減少する.",
+              "<color=#64C8F4FF>Malattia incurabile</color> : Se la tua barra della salute è superiore al 50%, scenderà lentamente al 50%.",
+              "<color=#64C8F4FF>Mal incurable</color> : Si vos HP sont supérieurs à 50 %, ils redescendent lentement jusqu’à 50 %.",
+              "<color=#64C8F4FF>Unheilbare Krankheit</color> : Wenn deine Gesundheitsleiste über 50 % liegt, sinkt sie langsam auf 50 %."
+            ]
+          }
+        }
+      },
+      {
+        "type": 12,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 5375
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>MP Surplus</color> : You lose 3% of your total health in 5 seconds if your health is higher than 1, but the cool-down time of your weapon skill decreases by 25%.",
+              "<color=#64C8F4FF>法力溢出</color> : 玩家生命值每5秒损失最大生命值的3%,直至生命值降为1.武器技能冷却缩短为原来的25%.",
+              "<color=#64C8F4FF>法力溢出</color> : 玩家生命值每5秒損失最大生命值的3%,直至生命值降為1.武器技能冷卻縮短為原來的25%.",
+              "<color=#64C8F4FF>MP Excedente</color> : Pierdes el 3% de tu salud total en 5 segundos si tu salud es superior a 1, pero el tiempo de enfriamiento de tu habilidad con las armas disminuye en un 25%.",
+              "<color=#64C8F4FF>Излишек здоровья</color>: вы будете терять 3% его запаса каждые 5 секунд, если ваше здоровье выше 1, но перезарядка навыка оружия ускоряется на 25%.",
+              "<color=#64C8F4FF>MP 超過</color> : HPが1以上の場合、5秒でHPの3％を失うが、武器スキルのクールダウンタイムは25％減る.",
+              "<color=#64C8F4FF>Surplus MP</color> : Perdi il 3% della tua salute totale in 5 secondi se la tua salute è superiore a 1, ma il tempo di raffreddamento della tua abilità con le armi diminuisce del 25%.",
+              "<color=#64C8F4FF>Trop-plein de compétence</color> : Vous perdez 3 % de votre vie totale en 5 secondes si vous avez plus de 1 point de vie, mais le refroidissement des compétences liées à vos armes est réduit de 25 %.",
+              "<color=#64C8F4FF>Manaüberschuss</color> : Wenn deine Gesundheit über 1 liegt, verlierst du über 5 Sekunden 3 % deiner Gesamtgesundheit. Allerdings wird die Abklingzeit deiner Waffenfähigkeiten um 25 % gesenkt."
+            ]
+          }
+        }
+      },
+      {
+        "type": 13,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 5840
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Chest Kill</color> : Falling chests, finally, meet the law of physics, you recieve a huge amount of damge when hit by non-boss chests.",
+              "<color=#64C8F4FF>真实的宝箱物理学</color> : 现在宝箱符合物理三大定律了,被非Boss宝箱砸中会受到巨大伤害.",
+              "<color=#64C8F4FF>真實的寶箱物理學</color> : 現在寶箱符合物理三大定律了,被非Boss寶箱砸中會受到巨大傷害.",
+              "<color=#64C8F4FF>Cofre asesino</color> : Los cofres que caen, por fin, responder a las leyes de la física, por lo que recibirás una gran cantidad de daño cuando te golpeen cofres que no son de jefes.",
+              "<color=#64C8F4FF>Сундуки убивают</color>: падающие сундуки, наконец, подчиняются законам физики и наносят огромный урон, кроме сундуков боссов.",
+              "<color=#64C8F4FF>チェストキル</color> : 落下してくるチェストが、本当に物理法則に従う.ボス以外のチェストに当たっても、大ダメージを受ける.",
+              "<color=#64C8F4FF>Cassa della morte</color> : Le casse che cadono, infine, rispettano le leggi della fisica, quando vieni colpito da casse che non è di un boss ricevi una quantità enorme di danno.",
+              "<color=#64C8F4FF>Coffres forts</color> : La chute des coffres s’aligne enfin avec les lois physiques, et vous subissez d’énormes dégâts si vous êtes heurté par un coffre (hors boss).",
+              "<color=#64C8F4FF>Tödliche Truhen</color> : Herabfallende Truhen halten sich endlich an die Naturgesetze. Wenn du von einer nicht-Boss-Truhe getroffen wirst, erleidest du jede Menge Schaden."
+            ]
+          }
+        }
+      },
+      {
+        "type": 14,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 6634
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Thunderstorm</color> : Lightning strikes randomly throughout the castle.",
+              "<color=#64C8F4FF>雷暴预警</color> : 城堡中持续随机落雷.",
+              "<color=#64C8F4FF>雷暴預警</color> : 城堡中持續隨機落雷.",
+              "<color=#64C8F4FF>Tormenta eléctrica</color> : Caen rayos al azar por todo el castillo.",
+              "<color=#64C8F4FF>Гроза</color>: молния бьет в случайные места в замке.",
+              "<color=#64C8F4FF>雷雨</color> : 城全体にランダムに落雷が発生する.",
+              "<color=#64C8F4FF>Temporale</color> : I fulmini colpiscono a caso in tutto il castello.",
+              "<color=#64C8F4FF>Orage</color> : La foudre frappe aléatoirement dans tout le château.",
+              "<color=#64C8F4FF>Gewitter</color> : Blitze schlagen zufällig überall im Schloss ein."
+            ]
+          }
+        }
+      },
+      {
+        "type": 15,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 5281
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Rockfalll</color> : Rocks fall randomly throughout the castle.",
+              "<color=#64C8F4FF>落石预警</color> : 城堡中持续随机落石.",
+              "<color=#64C8F4FF>落石預警</color> : 城堡中持續隨機落石.",
+              "<color=#64C8F4FF>Avalancha</color> : Caen piedras al azar por todo el castillo.",
+              "<color=#64C8F4FF>Камнепад</color>: камни падают в случайные места в замке.",
+              "<color=#64C8F4FF>落石</color> : 城全体にランダムに岩が落ちる.",
+              "<color=#64C8F4FF>Pioggia di rocce</color> : Le rocce cadono a caso in tutto il castello.",
+              "<color=#64C8F4FF>Chute de pierres</color> : Des pierres tombent aléatoirement dans tout le château.",
+              "<color=#64C8F4FF>Steinschlag</color> : Felsen stürzen zufällig überall im Schloss herab."
+            ]
+          }
+        }
+      },
+      {
+        "type": 16,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 5623
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Predator</color> : Chicken drumsticks restore double the normal amount, but apples and bananas restore 50% the normal amount.",
+              "<color=#64C8F4FF>肉食主义者</color> : 鸡腿回复量变为2倍,但苹果和香蕉回复量变为50%. ",
+              "<color=#64C8F4FF>肉食主義者</color> : 雞腿回復量變為2倍,但蘋果和香蕉回復量變為50%.",
+              "<color=#64C8F4FF>Predator</color> : Los muslos de pollo devuelven el doble de vida de lo normal, pero las manzanas y los plátanos devuelven solo el 50% de lo normal.",
+              "<color=#64C8F4FF>Плотоядный</color>: куриные окорочка восстанавливают вдвое больше здоровья, а яблоки и бананы – только 50% от обычного значения.",
+              "<color=#64C8F4FF>捕食者</color> : 鶏モモは通常の2倍の量に戻り、りんごとバナナは通常の量の50％に戻る.",
+              "<color=#64C8F4FF>Predatore</color> : Le bacchette di pollo ripristinano il doppio della quantità normale, ma le mele e le banane ripristinano il 50% della quantità normale.",
+              "<color=#64C8F4FF>Prédateur</color> : Les pilons de poulet redonnent 2 fois plus de vie, mais les pommes et bananes 2 fois moins.",
+              "<color=#64C8F4FF>Fleischfresser</color> : Hühnerkeulen stellen die doppelte Menge Gesundheit wieder her, aber Äpfel und Bananen nur 50 %."
+            ]
+          }
+        }
+      },
+      {
+        "type": 17,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 5200
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Vegetarian</color> : Apples and bananas restore double the normal amount, but chicken drumsticks restore 50% the normal amount.",
+              "<color=#64C8F4FF>素食主义者</color> : 苹果和香蕉回复量翻倍,鸡腿回复量变成原来50%.",
+              "<color=#64C8F4FF>素食主義者</color> : 蘋果和香蕉回復量翻倍,雞腿回復量變成原來50%.",
+              "<color=#64C8F4FF>Vegetarianismo</color> :Las manzanas y los plátanos devuelven  el doble de vida de lo normal, pero los muslos de pollo devuelven solo el 50% de lo normal.",
+              "<color=#64C8F4FF>Вегетарианец</color>: яблоки и бананы восстанавливают вдвое больше здоровья, а куриные окорочка – только 50% от обычного значения.",
+              "<color=#64C8F4FF>ベジタリアン</color> : りんごとバナナは通常の2倍の量に戻り、鶏モモは通常の量の50％に戻る.",
+              "<color=#64C8F4FF>Vegetariano</color> : Mele e banane ripristinano il doppio della quantità normale, ma le bacchette di pollo ripristinano il 50% della quantità normale.",
+              "<color=#64C8F4FF>Végétarisme</color> : Les pommes et bananes redonnent 2 fois plus de vie, mais les pilons de poulet 2 fois moins.",
+              "<color=#64C8F4FF>Vegetarier</color> : Äpfel und Bananen stellen die doppelte Menge Gesundheit wieder her, aber Hühnerkeulen nur 50 %."
+            ]
+          }
+        }
+      },
+      {
+        "type": 18,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 5380
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Foison</color> : All the active items and potions change to supplyments.",
+              "<color=#64C8F4FF>丰收季</color> : 所有主动道具和药水都变为补给品.",
+              "<color=#64C8F4FF>豐收季</color> : 所有主動道具和藥水都變為補給品.",
+              "<color=#64C8F4FF>Abundancia</color> : Todos los elementos activos y las pociones se convierten en suministro.",
+              "<color=#64C8F4FF>Изобилие</color>: все активные предметы и зелья становятся восполняемыми.",
+              "<color=#64C8F4FF>豊作</color> :アクティブなアイテムとポーションの全てがサプライになる.",
+              "<color=#64C8F4FF>Libagioni</color> : Tutti gli articoli attivi e le pozioni diventano rifornimento.",
+              "<color=#64C8F4FF>Foison</color> : Tous les objets actifs et potions à récupérer deviennent des provisions qui renflouent les HP.",
+              "<color=#64C8F4FF>Gift</color> : Alle aktiven Gegenstände und Tränke werden zu Nachschub."
+            ]
+          }
+        }
+      },
+      {
+        "type": 19,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 6806
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>\n    How to Train Your Dino</color> : Five pet dinosaurs stand with you from the start but you cannot loot any other passive items.",
+              "<color=#64C8F4FF>恐龙训练家</color> : 开局拥有5只恐龙,无法再拾取其他被动道具.",
+              "<color=#64C8F4FF>恐龍訓練家</color> : 開局擁有5只恐龍,無法再拾取其他被動道具.",
+              "<color=#64C8F4FF>\n    Cómo entrenar a tu dinosaurio</color> : Cinco crías de dinosaurio te acompañarán desde el principio, pero no podrás saquear ningún otro objeto pasivo.",
+              "<color=#64C8F4FF>Как приручить дракона</color>: со старта за вами следуют 5 компаньонов-динозавров, но вы не сможете поднять ни одного пассивного предмета.",
+              "<color=#64C8F4FF>\n    恐竜を仲間にしよう</color> : スタート時からペットの恐竜が5匹ついてくるが、他のパッシブアイテムを奪うことはできない.",
+              "<color=#64C8F4FF>\n    Come addestrare il tuo Dinosauro</color> : Cinque dinosauri da compagnia stanno con te fin dall'inizio, ma non puoi saccheggiare altri oggetti passivi.",
+              "<color=#64C8F4FF>Dinosaures de compagnie</color> : Vous êtes accompagné de 5 dinosaures apprivoisés dès le départ, mais vous ne pouvez ramasser aucun autre objet passif.",
+              "<color=#64C8F4FF>Dinozähmen leicht gemacht</color> : Fünf folgsame Dinosaurier stehen von Beginn an an deiner Seite, aber du kannst keine anderen passiven Gegenstände einsammeln."
+            ]
+          }
+        }
+      },
+      {
+        "type": 20,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 5943
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Weapon Master</color> : Gain a new but non-switchable weapon when entering a new room.",
+              "<color=#64C8F4FF>武器大师</color> : 每到一个新的房间,获得一把随机新武器但无法更换.",
+              "<color=#64C8F4FF>武器大師</color> : 每到一個新的房間,獲得一把隨機新武器但無法更換.",
+              "<color=#64C8F4FF>Weapon Master</color> : Recibirás un arma nueva no intercambiable al entrar en una nueva sala.",
+              "<color=#64C8F4FF>Оружейный мастер</color>: при входе в новую комнату вы получаете новое оружие, но его нельзя поменять.",
+              "<color=#64C8F4FF>武器マスター</color> : 新しい部屋に入ると、新しいが切り替え不可能な武器を獲得する.",
+              "<color=#64C8F4FF>Maestro d'Arma</color> : Quando entri in una nuova stanza, ottieni un'arma nuova ma non commutabile.",
+              "<color=#64C8F4FF>Maître d’armes</color> : Vous gagnez une nouvelle arme non échangeable à chaque entrée dans une salle.",
+              "<color=#64C8F4FF>Waffenmeister</color> : Wenn du einen neuen Raum betrittst, erhältst du eine neue, aber nicht wechselbare Waffe."
+            ]
+          }
+        }
+      },
+      {
+        "type": 21,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 6732
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Slippery Party</color> : Slippery everywhere!",
+              "<color=#64C8F4FF>滑溜溜派对</color> : 全程保持打滑的状态.",
+              "<color=#64C8F4FF>滑溜溜派對</color> : 全程保持打滑的狀態.",
+              "<color=#64C8F4FF>Fiesta resbaladiza</color> : ¡Todo es resbaladizo!",
+              "<color=#64C8F4FF>Скользкая вечеринка</color>: везде становится очень сколько!",
+              "<color=#64C8F4FF>ツルツルパーティー</color> : どこでも滑りやすい！",
+              "<color=#64C8F4FF>Scivolandia</color> : È tutto scivoloso!",
+              "<color=#64C8F4FF>Terrain glissant</color> : Ça glisse, ça glisse partout !",
+              "<color=#64C8F4FF>Rutschpartie</color> : Alles ist rutschig!"
+            ]
+          }
+        }
+      },
+      {
+        "type": 22,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 6900
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Sacrifice</color> :Gain 2% attack damage along with per 1% health lost.",
+              "<color=#64C8F4FF>献祭</color> : 每减少1%血量,增加2%的伤害.",
+              "<color=#64C8F4FF>獻祭</color> : 每減少1%血量,增加2%的傷害.",
+              "<color=#64C8F4FF>Sacrifice</color> :  Por cada 1% de vida perdida recibirás un 2% de bonificación de ataque.",
+              "<color=#64C8F4FF>Жертва</color>: за потерю 1% здоровья ваша атака увеличивается на 2%.",
+              "<color=#64C8F4FF>犠牲</color> :  HPを1％失い、2％の攻撃ボーナスを獲得する.",
+              "<color=#64C8F4FF>Sacrificio</color> : L'1% della salute persa ti farà guadagnare un bonus di attacco del 2%.",
+              "<color=#64C8F4FF>Sacrifice</color> : 1 % de vie perdue donne un bonus d’attaque de 2 %.",
+              "<color=#64C8F4FF>Opfer</color> : 1 % verlorener Gesundheit verleiht dir einen Angriffsbonus von 2 %."
+            ]
+          }
+        }
+      },
+      {
+        "type": 23,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 6086
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Super Bomber</color> : You have no any weapons, only the Double-Damage Bombs, get restored occassionally.",
+              "<color=#64C8F4FF>终极炸弹人</color> : 玩家不再拥有武器,炸弹双倍伤害,一定时间补充炸弹.",
+              "<color=#64C8F4FF>終極炸彈人</color> : 玩家不再擁有武器,炸彈雙倍傷害,一定時間補充炸彈.",
+              "<color=#64C8F4FF>Superbombardeo</color> : No tienes armas, sólo las bombas de doble daño, que se restauran de vez en cuando.",
+              "<color=#64C8F4FF>Бомбардир</color>: у вас нет никакого оружия, кроме бомб, урон которых удвоен, а запас время от времени восстанавливается.",
+              "<color=#64C8F4FF>スーパーボンバー</color> : 武器は、時折復元されるタブルダメージの爆弾のみで、他の武器は無い.",
+              "<color=#64C8F4FF>Super Bombardiere</color> : Non hai armi, solo le bombe a doppio taglio, si ricostituiscono di tanto in tanto.",
+              "<color=#64C8F4FF>Super Bomb Man</color> : Vous n’avez aucune arme, juste des bombes à doubles dégâts réapprovisionnées de temps en temps.",
+              "<color=#64C8F4FF>Superbomber</color> : Du hast keine Waffen, nur Bomben mit doppeltem Schaden, die regelmäßig wieder aufgefüllt werden."
+            ]
+          }
+        }
+      },
+      {
+        "type": 24,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 5509
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>I, the Vampire</color> : A vampire enjoys 10% of the leech buff, but cannot loot any supplies.",
+              "<color=#64C8F4FF>吸血鬼的日常</color> : 吸血鬼永久拥有10%吸血BUFF,但是无法拾取补给品.",
+              "<color=#64C8F4FF>吸血鬼的日常</color> : 吸血鬼永久擁有10%吸血BUFF,但是無法拾取補給品.",
+              "<color=#64C8F4FF>Yo, el vampiro </color> : Un vampiro disfruta del 10% de la sangre que chupa, pero no puede saquear ningún suministro.",
+              "<color=#64C8F4FF>Я — вампир</color>: ваш вампиризм усиливается на 10%, но вы не сможете поднимать какие-либо расходники.",
+              "<color=#64C8F4FF>私がバンパイアだ</color> :バンパイアは吸血鬼バフの10％を楽しむが、サプライを手に入れることはできない.",
+              "<color=#64C8F4FF>Io, il Vampiro</color> : Un vampiro gode del 10% del potenziamento sanguisughe, ma non può saccheggiare le scorte.",
+              "<color=#64C8F4FF>Je suis un vampire</color> : Le vampire a droit à 10 % de bonus sangsue, mais n’a pas le droit de ramasser des provisions qui renflouent les HP.",
+              "<color=#64C8F4FF>Ich, der Vampir</color> : Ein Vampir genießt einen Absaugebonus in Höhe von 10 %, kann aber keine Versorgungsgegenstände einsammeln."
+            ]
+          }
+        }
+      },
+      {
+        "type": 25,
+        "icon": {
+          "m_FileID": 0,
+          "m_PathID": 6195
+        },
+        "intro": {
+          "num": 9,
+          "keys": {
+            "Array": [
+              0,
+              1,
+              6,
+              2,
+              3,
+              4,
+              7,
+              8,
+              5
+            ]
+          },
+          "values": {
+            "Array": [
+              "<color=#64C8F4FF>Elf King</color> : Gain all kind of elves at the beginning of the game,possessing the deadly skills of the elves gain double attack damage, but an elf wont lower itself to loot any other passive items.",
+              "<color=#64C8F4FF>最强精灵王</color> : 开局拥有所有小精灵,精灵攻击力翻倍,无法拾取其他被动道具.",
+              "<color=#64C8F4FF>最強精靈王</color> : 開局擁有所有小精靈,精靈攻擊力翻倍,無法拾取其他被動道具.",
+              "<color=#64C8F4FF>Rey de los elfos</color> : Poseer las habilidades mortales de los elfos te hace ganar el doble de daño de ataque, pero un elfo no se rebajará para saquear otros objetos pasivos.",
+              "<color=#64C8F4FF>Король эльфов</color>: смертоносные навыки эльфов увеличивают ваш урон вдвое, но, будучи эльфом, вы не унизитесь до того, чтобы подбирать пассивные предметы.",
+              "<color=#64C8F4FF>エルフの王</color> : エルフの驚異的なスキルを獲得し攻撃力が2倍になる.しかし、エルフはパッシブアイテムを戦利品にし自分を下げるようなことはしない.",
+              "<color=#64C8F4FF>Re Elfo</color> : Possedere le abilità mortali degli elfi, ti fa guadagnare un doppio danno da attacco, ma un elfo non si abbasserà a saccheggiare nessun altro oggetto passivo.",
+              "<color=#64C8F4FF>Roi des elfes</color> : Les redoutables techniques des elfes doublent les dégâts infligés par vos attaques, mais un elfe ne s’abaisse pas à ramasser d’autres objets passifs comme un simple pillard.",
+              "<color=#64C8F4FF>Elfenkönig</color> : Die tödlichen Fähigkeiten der Elfen verleihen dir doppelten Angriffsschaden, aber ein Elf lässt sich nie dazu herab, andere passive Gegenstände einzusammeln."
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
