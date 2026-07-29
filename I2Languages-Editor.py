@@ -45,7 +45,7 @@ class I2Editor(tkinterdnd2.TkinterDnD.Tk if tkinterdnd2 else tk.Tk):
         file_menu.add_command(label="Save", command=self.save_file, accelerator="Ctrl+S")
         file_menu.add_command(label="Save As...", command=self.save_file_as, accelerator="Ctrl+Shift+S")
         file_menu.add_separator()
-        file_menu.add_command(label="Export to TXT (with codes)", command=self.export_to_txt)
+        file_menu.add_command(label="Export to TXT", command=self.export_to_txt)
         file_menu.add_command(label="Import from TXT", command=self.import_from_txt)
         file_menu.add_separator()
         file_menu.add_command(label="Exit", command=self.quit)
@@ -149,7 +149,9 @@ class I2Editor(tkinterdnd2.TkinterDnD.Tk if tkinterdnd2 else tk.Tk):
             self.language_names = [f"Language {i}" for i in range(len(langs))]
             self.language_combo.config(values=self.language_names, state="readonly")
             self.language_var.set(self.language_names[0])
-        except: pass
+        except Exception as e: 
+            # تحسين 3: طباعة الخطأ لمعرفة المشكلة مستقبلاً بدل تجاهله
+            print(f"Warning in detect_languages: {e}")
 
     def populate_treeview(self):
         """Clears and fills the table using escaped text (codes visible)."""
@@ -238,6 +240,7 @@ class I2Editor(tkinterdnd2.TkinterDnD.Tk if tkinterdnd2 else tk.Tk):
         """Core logic to write the JSON data to disk."""
         try:
             with open(path, 'w', encoding='utf-8') as f:
+                # json.dump automatically adds quotes "" around strings
                 json.dump(self.data, f, indent=2, ensure_ascii=False)
             messagebox.showinfo("Success", f"File saved to:\n{path}")
             self.status_bar.config(text=f"Last saved: {path}")
@@ -246,9 +249,9 @@ class I2Editor(tkinterdnd2.TkinterDnD.Tk if tkinterdnd2 else tk.Tk):
 
     # --- Export and Import ---
     def export_to_txt(self):
-        """Saves current language items into a TXT file, keeping literal codes like \n."""
+        """Saves current language items into a TXT file without extra quotes, keeping codes like \n."""
         if not self.data: return
-        path = filedialog.asksaveasfilename(defaultextension=".txt")
+        path = filedialog.asksaveasfilename(defaultextension=".txt", filetypes=[("Text files", "*.txt")])
         if not path: return
         lang_idx = self._get_selected_language_index()
         try:
@@ -260,26 +263,41 @@ class I2Editor(tkinterdnd2.TkinterDnD.Tk if tkinterdnd2 else tk.Tk):
                         raw = self.terms_list_ref[idx]['Languages']['Array'][lang_idx]
                     else:
                         raw = self.terms_list_ref[idx]['intro']['values']['Array'][lang_idx]
-                    # Convert physical newlines to the string "\n" for the TXT file
-                    f.write(f'"{self._escape_text(raw).replace(chr(34), chr(34)*2)}"\n')
-            messagebox.showinfo("Export", "TXT file exported with codes preserved.")
-        except Exception as e: messagebox.showerror("Export Error", str(e))
+                    
+                    # تم إزالة علامات التنصيص المزعجة، وسيتم تصدير النص نظيفاً تماماً
+                    escaped_text = self._escape_text(raw)
+                    f.write(f'{escaped_text}\n')
+                    
+            messagebox.showinfo("Export", "TXT file exported successfully (Clean text without quotes).")
+        except Exception as e: 
+            messagebox.showerror("Export Error", str(e))
 
     def import_from_txt(self):
-        """Reads a TXT file and converts string '\n' back into actual JSON newlines."""
+        """Reads a TXT file and injects the text back."""
         path = filedialog.askopenfilename(filetypes=[("Text files", "*.txt")])
         if not path: return
         try:
             with open(path, 'r', encoding='utf-8') as f:
                 lines = f.readlines()
+            
             tree_items = self.tree.get_children()
+            
+            # تحسين 1: الأمان! التأكد من أن ملف الـ TXT يحتوي على نفس عدد الأسطر لمنع اختلاط النصوص
+            if len(lines) != len(tree_items):
+                messagebox.showerror("Import Error", f"Line count mismatch!\nTXT file has {len(lines)} lines, but the JSON requires {len(tree_items)} lines.\nImport aborted to prevent data corruption.")
+                return
+
             for item_id, line in zip(tree_items, lines):
-                processed = line.strip()
-                if processed.startswith('"') and processed.endswith('"'):
-                    processed = processed[1:-1].replace('""', '"')
-                self.update_data_and_tree(self.tree.item(item_id, "values")[1], self._unescape_text(processed))
-            messagebox.showinfo("Import", "Imported and converted codes back to newlines.")
-        except Exception as e: messagebox.showerror("Import Error", str(e))
+                # تحسين 2: إزالة النزول لسطر جديد فقط من نهاية النص، مع الحفاظ على المسافات المتعمدة
+                processed = line.rstrip('\n')
+                
+                # تحديث النص (سيتم إضافة علامات التنصيص تلقائياً لاحقاً عند الحفظ كـ JSON)
+                term_key = self.tree.item(item_id, "values")[1]
+                self.update_data_and_tree(term_key, self._unescape_text(processed))
+                
+            messagebox.showinfo("Import", "Text imported successfully! They will have quotes when saved to JSON.")
+        except Exception as e: 
+            messagebox.showerror("Import Error", str(e))
 
     # --- Utilities ---
     def find_next(self):
