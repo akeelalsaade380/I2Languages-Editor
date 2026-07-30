@@ -107,7 +107,7 @@ class I2Editor(tkinterdnd2.TkinterDnD.Tk if tkinterdnd2 else tk.Tk):
     def _escape_text(self, text):
         """Converts real newlines to literal '\n' and '\r' strings."""
         if text is None: return ""
-        return text.replace("\r", "\\r").replace("\n", "\\n")
+        return str(text).replace("\r", "\\r").replace("\n", "\\n")
 
     def _unescape_text(self, text):
         """Converts literal '\n' and '\r' strings back to actual newline characters."""
@@ -115,28 +115,34 @@ class I2Editor(tkinterdnd2.TkinterDnD.Tk if tkinterdnd2 else tk.Tk):
 
     # --- Loading and Detection ---
     def load_file_logic(self, filepath):
-        """Reads JSON and detects if it is a standard I2 file or DailyTask file."""
+        """Reads JSON and detects if it is a standard I2 file, Blasphemous format, or DailyTask file."""
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
                 self.data = json.load(f)
             
             self.terms_list_ref = None
+            
+            # --- تحديد مسار مصفوفة النصوص بناءً على هيكل الملف ---
             if 'mSource' in self.data and 'mTerms' in self.data['mSource']:
                 self.terms_list_ref = self.data['mSource']['mTerms'].get('Array')
+                self.file_mode = "standard"
+            elif 'mTerms' in self.data:  # دعم ملفات Blasphemous (mTerms في الجذر)
+                self.terms_list_ref = self.data['mTerms'].get('Array')
                 self.file_mode = "standard"
             elif 'dailyTaskInfoList' in self.data:
                 self.terms_list_ref = self.data['dailyTaskInfoList'].get('Array')
                 self.file_mode = "task"
             
             if self.terms_list_ref is None:
-                raise ValueError("Format not recognized.")
+                raise ValueError("لم يتم التعرف على بنية الملف. (Format not recognized)")
 
             self.current_filepath = filepath
             self.detect_languages()
             self.populate_treeview()
             self.status_bar.config(text=f"Loaded ({self.file_mode}): {filepath}")
+        
         except Exception as e:
-            messagebox.showerror("Error", f"Could not load file: {e}")
+            messagebox.showerror("Error", f"Could not load file:\n{str(e)}")
 
     def detect_languages(self):
         """Finds how many languages are in the first entry."""
@@ -150,7 +156,6 @@ class I2Editor(tkinterdnd2.TkinterDnD.Tk if tkinterdnd2 else tk.Tk):
             self.language_combo.config(values=self.language_names, state="readonly")
             self.language_var.set(self.language_names[0])
         except Exception as e: 
-            # تحسين 3: طباعة الخطأ لمعرفة المشكلة مستقبلاً بدل تجاهله
             print(f"Warning in detect_languages: {e}")
 
     def populate_treeview(self):
@@ -240,7 +245,6 @@ class I2Editor(tkinterdnd2.TkinterDnD.Tk if tkinterdnd2 else tk.Tk):
         """Core logic to write the JSON data to disk."""
         try:
             with open(path, 'w', encoding='utf-8') as f:
-                # json.dump automatically adds quotes "" around strings
                 json.dump(self.data, f, indent=2, ensure_ascii=False)
             messagebox.showinfo("Success", f"File saved to:\n{path}")
             self.status_bar.config(text=f"Last saved: {path}")
@@ -264,7 +268,6 @@ class I2Editor(tkinterdnd2.TkinterDnD.Tk if tkinterdnd2 else tk.Tk):
                     else:
                         raw = self.terms_list_ref[idx]['intro']['values']['Array'][lang_idx]
                     
-                    # تم إزالة علامات التنصيص المزعجة، وسيتم تصدير النص نظيفاً تماماً
                     escaped_text = self._escape_text(raw)
                     f.write(f'{escaped_text}\n')
                     
@@ -282,16 +285,12 @@ class I2Editor(tkinterdnd2.TkinterDnD.Tk if tkinterdnd2 else tk.Tk):
             
             tree_items = self.tree.get_children()
             
-            # تحسين 1: الأمان! التأكد من أن ملف الـ TXT يحتوي على نفس عدد الأسطر لمنع اختلاط النصوص
             if len(lines) != len(tree_items):
                 messagebox.showerror("Import Error", f"Line count mismatch!\nTXT file has {len(lines)} lines, but the JSON requires {len(tree_items)} lines.\nImport aborted to prevent data corruption.")
                 return
 
             for item_id, line in zip(tree_items, lines):
-                # تحسين 2: إزالة النزول لسطر جديد فقط من نهاية النص، مع الحفاظ على المسافات المتعمدة
                 processed = line.rstrip('\n')
-                
-                # تحديث النص (سيتم إضافة علامات التنصيص تلقائياً لاحقاً عند الحفظ كـ JSON)
                 term_key = self.tree.item(item_id, "values")[1]
                 self.update_data_and_tree(term_key, self._unescape_text(processed))
                 
@@ -323,7 +322,7 @@ class I2Editor(tkinterdnd2.TkinterDnD.Tk if tkinterdnd2 else tk.Tk):
                 old = self.terms_list_ref[idx]['Languages']['Array'][lang_idx]
             else:
                 old = self.terms_list_ref[idx]['intro']['values']['Array'][lang_idx]
-            new = re.sub(re.escape(q), r, old, flags=re.IGNORECASE)
+            new = re.sub(re.escape(q), r, str(old), flags=re.IGNORECASE)
             self.update_data_and_tree(key, new)
 
     def on_language_change(self, e): self.populate_treeview()
